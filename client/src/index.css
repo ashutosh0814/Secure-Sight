@@ -24,14 +24,14 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
 
-  /* SecureSight Custom Colors */
-  --dark-bg: hsl(0, 0%, 10.2%);
-  --card-bg: hsl(0, 0%, 16.5%);
-  --orange-badge: hsl(16, 100%, 60%);
-  --red-badge: hsl(0, 84%, 60%);
-  --yellow-btn: hsl(45, 93%, 61%);
-  --blue-badge: hsl(217, 91%, 60%);
-  --teal-badge: hsl(160, 84%, 39%);
+  /* SecureSight Custom Colors - Exact match to Figma */
+  --dark-bg: #1a1a1a;
+  --card-bg: #2a2a2a;
+  --orange-badge: #ff6b35;
+  --red-badge: #dc2626;
+  --yellow-btn: #fbbf24;
+  --blue-badge: #3b82f6;
+  --teal-badge: #10b981;
 }
 
 .dark {
@@ -64,42 +64,46 @@
 
   body {
     @apply font-sans antialiased;
-    background-color: hsl(var(--dark-bg));
-    color: hsl(0, 0%, 98%);
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  html {
+    background-color: #1a1a1a;
   }
 }
 
 @layer utilities {
   .bg-dark-bg {
-    background-color: hsl(var(--dark-bg));
+    background-color: var(--dark-bg);
   }
   
   .bg-card-bg {
-    background-color: hsl(var(--card-bg));
+    background-color: var(--card-bg);
   }
   
   .bg-orange-badge {
-    background-color: hsl(var(--orange-badge));
+    background-color: var(--orange-badge);
   }
   
   .bg-red-badge {
-    background-color: hsl(var(--red-badge));
+    background-color: var(--red-badge);
   }
   
   .bg-yellow-btn {
-    background-color: hsl(var(--yellow-btn));
+    background-color: var(--yellow-btn);
   }
   
   .bg-blue-badge {
-    background-color: hsl(var(--blue-badge));
+    background-color: var(--blue-badge);
   }
   
   .bg-teal-badge {
-    background-color: hsl(var(--teal-badge));
+    background-color: var(--teal-badge);
   }
   
   .text-yellow-btn {
-    color: hsl(var(--yellow-btn));
+    color: var(--yellow-btn);
   }
 
   .pulse-red {
