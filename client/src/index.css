@@ -63,9 +63,11 @@
   }
 
   body {
-    @apply font-sans antialiased;
+    @apply antialiased;
     background-color: #1a1a1a;
     color: #ffffff;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 13px;
   }
   
   html {
@@ -117,5 +119,32 @@
     50% {
       opacity: .5;
     }
+  }
+
+  /* Surveillance system typography */
+  .surveillance-font {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    letter-spacing: 0.5px;
+  }
+  
+  .incident-type {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+  
+  .camera-label {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+  }
+  
+  .timestamp {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 11px;
+    letter-spacing: 0.4px;
   }
 }

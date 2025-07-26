@@ -4,7 +4,7 @@ export default function IncidentPlayer() {
   return (
     <div className="flex-1 p-6 space-y-4">
       {/* Timestamp */}
-      <div className="bg-card-bg px-3 py-1 rounded text-xs text-gray-300 inline-block">
+      <div className="bg-card-bg px-3 py-1 rounded text-xs text-gray-300 inline-block timestamp">
         11/7/2025 - 03:12:37
       </div>
       
@@ -20,7 +20,7 @@ export default function IncidentPlayer() {
         {/* Camera indicator */}
         <div className="absolute bottom-4 left-4 bg-red-600 text-white px-2 py-1 rounded text-xs flex items-center space-x-1">
           <div className="w-2 h-2 bg-white rounded-full pulse-red"></div>
-          <span>Camera - 01</span>
+          <span className="camera-label">Camera - 01</span>
         </div>
       </div>
       
@@ -28,7 +28,7 @@ export default function IncidentPlayer() {
       <div className="flex space-x-4">
         {/* Camera 02 */}
         <div className="flex-1">
-          <div className="text-xs text-gray-400 mb-1">Camera - 02</div>
+          <div className="text-xs text-gray-400 mb-1 camera-label">Camera - 02</div>
           {/* Shop floor camera showing retail environment */}
           <img 
             src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225" 
@@ -39,7 +39,7 @@ export default function IncidentPlayer() {
         
         {/* Camera 03 */}
         <div className="flex-1">
-          <div className="text-xs text-gray-400 mb-1">Camera - 03</div>
+          <div className="text-xs text-gray-400 mb-1 camera-label">Camera - 03</div>
           {/* Entrance camera showing doorway security view */}
           <img 
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225" 

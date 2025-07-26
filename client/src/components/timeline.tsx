@@ -38,7 +38,7 @@ export default function Timeline() {
     <div className="bg-card-bg border-t border-gray-700 p-4">
       {/* Camera List Header */}
       <div className="mb-3">
-        <h3 className="text-sm font-medium text-gray-300 mb-2">Camera List</h3>
+        <h3 className="text-sm font-medium text-gray-300 mb-2 surveillance-font">Camera List</h3>
       </div>
       
       {/* Compact 24-hour Timeline */}
@@ -57,7 +57,7 @@ export default function Timeline() {
             
             return (
               <div key={camera.id} className="flex items-center space-x-2 h-6">
-                <div className="w-16 text-xs text-gray-300 flex items-center">
+                <div className="w-16 text-xs text-gray-300 flex items-center camera-label">
                   <Video className="w-3 h-3 mr-1" />
                   {camera.name}
                 </div>
@@ -69,7 +69,7 @@ export default function Timeline() {
                         key={index}
                         className={`absolute top-1/2 transform -translate-y-1/2 ${marker.position}`}
                       >
-                        <span className={`${marker.color} text-white text-xs px-1 py-0.5 rounded whitespace-nowrap`}>
+                        <span className={`${marker.color} text-white text-xs px-1 py-0.5 rounded whitespace-nowrap incident-type`}>
                           {marker.type}
                         </span>
                       </div>

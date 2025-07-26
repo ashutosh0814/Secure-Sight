@@ -10,7 +10,7 @@ export default function Navbar() {
             <div className="w-8 h-8 bg-yellow-btn rounded grid place-items-center">
               <Video className="text-black w-4 h-4" />
             </div>
-            <span className="text-xl font-bold text-white">MANDLACK</span>
+            <span className="text-xl font-bold text-white surveillance-font">MANDLACK</span>
           </div>
           
           {/* Navigation Items */}

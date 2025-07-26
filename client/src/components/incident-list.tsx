@@ -134,14 +134,14 @@ export default function IncidentList() {
               />
               <div className="flex-1">
                 <div className="flex items-center space-x-2 mb-1">
-                  <span className={`${getBadgeColor(incident.type)} text-white text-xs px-2 py-1 rounded`}>
+                  <span className={`${getBadgeColor(incident.type)} text-white text-xs px-2 py-1 rounded incident-type`}>
                     {incident.type}
                   </span>
                 </div>
                 <div className="text-sm text-gray-300 mb-1">
                   {incident.camera.location}
                 </div>
-                <div className="text-xs text-gray-400">
+                <div className="text-xs text-gray-400 timestamp">
                   {formatTime(incident.tsStart, incident.tsEnd)}
                 </div>
               </div>
